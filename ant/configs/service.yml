@@ -1,0 +1,18 @@
+multi_instances:
+  data_dir: "/Users/wangyao/Desktop/ant/data"
+
+scheduler:
+  backup:
+    hours: 1
+  clear_backup:
+    hours: 1
+    max_keep_backups: 10
+
+uvicorn:
+  host: 0.0.0.0
+  port: 1234
+  reload: true
+  debug: false
+  workers: 1
+
+

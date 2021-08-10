@@ -1,0 +1,27 @@
+meta:
+  name: "ant"
+  fmt: "%(asctime)s-%(name)s[%(levelname)s]:%(message)s"
+  level: DEBUG
+  log_enable: true
+  log_to_console: true
+  log_to_file: true
+  log_to_elasticsearch: false
+  tz: "Asia/Shanghai"
+
+handlers:
+  file:
+    logger_dir: "/Users/wangyao/Desktop/ant/logs"
+    logger_filename: "ant"
+    when: "MIDNIGHT"
+    backup_count: 10
+    level: DEBUG
+
+  elasticsearch:
+    host:
+    port:
+    user:
+    password:
+    index_name:
+    env:
+    level:
+
