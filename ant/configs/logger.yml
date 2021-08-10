@@ -10,7 +10,7 @@ meta:
 
 handlers:
   file:
-    logger_dir: "/Users/wangyao/Desktop/ant/logs"
+    logger_dir: "/ant/logs"
     logger_filename: "ant"
     when: "MIDNIGHT"
     backup_count: 10

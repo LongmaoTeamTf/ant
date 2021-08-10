@@ -34,7 +34,7 @@ class Configs(object):
 
 class ConfigFlags(object):
 
-    CONFIGS_DIR = "ant/configs"
+    CONFIGS_DIR = "/ant/configs"
     __slots__ = ("logger", "service")
 
     def __init__(self):

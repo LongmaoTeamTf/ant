@@ -1,5 +1,5 @@
 multi_instances:
-  data_dir: "/Users/wangyao/Desktop/ant/data"
+  data_dir: "/ant/data"
 
 scheduler:
   backup:
