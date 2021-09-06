@@ -5,8 +5,8 @@ from absl.testing import parameterized, absltest
 
 import tempfile
 import numpy as np
-from recommends.recall.faiss.top_k_search import TopKSearch
-from recommends.recall.faiss.multi_instances import MultiInstances
+from ant.core.top_k_search import TopKSearch
+from ant.core.multi_instances import MultiInstances
 
 
 class MultiInstancesTest(parameterized.TestCase):
