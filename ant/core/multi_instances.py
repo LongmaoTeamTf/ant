@@ -33,6 +33,10 @@ class MultiInstances(object):
         else:
             os.mkdir(self._members_dir)
 
+    @property
+    def member_dir(self):
+        return self._members_dir
+
     def initialization(self):
 
         for member_name in os.listdir(self._members_dir):
