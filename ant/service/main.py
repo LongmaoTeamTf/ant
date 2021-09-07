@@ -278,7 +278,7 @@ def scheduler_backup():
 @scheduler.scheduled_job("interval", hours=config_flags.service.scheduler.clear_backup.hours)
 def scheduler_clear_backup(max_keep_backups=config_flags.service.scheduler.clear_backup.max_keep_backups):
     for instance in mis.list_instances():
-        backup_dir = os.path.join(root_dir, "members", instance)
+        backup_dir = os.path.join(mis.member_dir, instance)
         objs = os.listdir(backup_dir)
         versions = []
         for obj in objs:
